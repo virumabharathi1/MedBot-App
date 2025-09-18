@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext.jsx";
 import backgroundImage from "../assets/pediatric-background.jpg"; // Ensure the path is correct
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Toast } from 'bootstrap';
 const apiUrl = import.meta.env.VITE_API_URL;
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -16,13 +16,24 @@ const Login = () => {
   const { setAuth } = useAuth();
   const navigate = useNavigate();
 
-  const showToast = (message, type = "success") => {
-    setToastMessage(message);
-    setToastType(type);
-    const toastEl = toastRef.current;
-    const toast = new window.bootstrap.Toast(toastEl);
-    toast.show();
-  };
+const showToast = (message, type = "success") => {
+  const toastEl = toastRef.current;
+  if (!toastEl) return;
+
+  // Update toast content and class directly
+  toastEl.querySelector(".toast-body").textContent = message;
+  toastEl.className = `toast align-items-center text-bg-${type} border-0`;
+
+  // Dispose existing instance
+  const existingToast = Toast.getInstance(toastEl);
+  if (existingToast) existingToast.dispose();
+
+  // Create new Toast instance
+  const toast = new Toast(toastEl, { autohide: true, delay: 3000 });
+  toast.show();
+};
+
+
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -108,9 +119,9 @@ const Login = () => {
 
       {/* Bootstrap Toast */}
       <div
-        className="position-fixed bottom-0 end-0 p-3"
-        style={{ zIndex: 11 }}
-      >
+  className="position-fixed top-0 end-0 p-3"
+  style={{ zIndex: 1055 }}
+>
         <div
           ref={toastRef}
           className={`toast align-items-center text-bg-${toastType} border-0`}

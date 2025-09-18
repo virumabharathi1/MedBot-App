@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar.jsx";
+import { useAuth } from "../context/AuthContext.jsx";
 
 const Layout = ({ children }) => {
   const [activeMenu, setActiveMenu] = useState("dashboard");
-
+  const { auth, logout } = useAuth();
   const handleLogout = () => {
-    console.log("Logout clicked");
+    logout();
     // You can call your logout function from AuthContext here
   };
 
