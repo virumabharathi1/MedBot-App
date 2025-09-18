@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #F6F9FB;
+}
+
+.clinic-bg {
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.clinic-navbar {
+  width: 100%;
+  background-color: #4FB3BF;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.clinic-login-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 60px;
+}
+
+.form-control, .form-select {
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+}
+
+.clinic-btn {
+  background-color: #4FB3BF;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.clinic-btn:hover {
+  background-color: #3BAAAE;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f9;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.form-header p {
+  margin: 0 0 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+.form-header .disclaimer {
+  font-weight: 500;
+  color: #c00;
+  font-size: 13px;
+}
+
+.form-section {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-section h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 2px solid #5d9cec;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.grid-full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-group input::placeholder,
+.form-group select option[disabled] {
+  color: #aaa;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.radio-group label,
+.checkbox-group label {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.sidebar-link {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.sidebar-link:hover {
+  background-color: #f0f4f7;
+  color: #007bff;
+}
+
+.sidebar-link.active {
+  background-color: #eaf3ff;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.sidebar-item {
+  cursor: default;
+  user-select: none;
+}
+/* Sidebar Specific Styles */
+.sidebar-container {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* sidebar scrolls independently */
+  background-color: #FEFEFA;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+}
+
+/* Main content area */
+main {
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #FDFDF9;
+  overflow-y: auto;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* Cards & forms */
+.clinic-login-card,
+.form-container,
+.form-section {
+  background-color: #FEFEFA; /* soft white for card backgrounds */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08); /* gentle shadow for elegance */
+}
