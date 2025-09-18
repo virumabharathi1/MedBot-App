@@ -56,9 +56,7 @@ const AppRoutes = () => {
           path="/form"
           element={
             <ProtectedRoute>
-              <Layout>
                 <AppointmentForm />
-              </Layout>
             </ProtectedRoute>
           }
         />
