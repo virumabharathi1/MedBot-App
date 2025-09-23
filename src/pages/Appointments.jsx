@@ -16,7 +16,7 @@ const AppointmentForm = () => {
     gender: "Male",
     streetAddress: "123 Main St",
     zipCode: "75035",
-    city: "Frisco",
+    city: "California",
     state: "TX",
     email: "johndoe@example.com",
     iDontHaveAnEmail: false,
@@ -28,7 +28,7 @@ const AppointmentForm = () => {
     howDidYouHear: "Internet Search",
     referringProvider: "Dr. Smith",
     reasonForAppointment: "Annual Check-up",
-    preferredLocation: "Frisco Office",
+    preferredLocation: "California Office",
     providerToSee: "",
     preferredDay: "Tuesday",
     preferredTime: "Morning",
@@ -106,7 +106,7 @@ const AppointmentForm = () => {
     <div className="form-container">
       <div className="form-header">
         <p>
-          Please fill out the details in the form below to submit a new appointment request for Pediatric Associates Of Frisco
+          Please fill out the details in the form below to submit a new appointment request for Pediatric Associates
         </p>
         <p className="disclaimer">
           DISCLAIMER: If you are experiencing a medical emergency, please call 9-1-1. This form is for appointment requests only.
@@ -256,7 +256,7 @@ const AppointmentForm = () => {
             <div className="form-group">
               <label>Preferred location*</label>
               <select name="preferredLocation" value={formData.preferredLocation} onChange={handleChange} required>
-                <option>Frisco Office</option>
+                <option>Office</option>
               </select>
             </div>
             <div className="form-group">

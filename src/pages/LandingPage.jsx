@@ -189,7 +189,7 @@ const LandingPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="display-4">Compassionate Pediatric Care in Frisco, TX</h1>
+            <h1 className="display-4">Compassionate Pediatric Care</h1>
             <p className="lead">Your child's health is our top priority. We're here to help them grow strong and healthy.</p>
             <div className="hero-buttons mt-4">
               <Button variant="light" size="lg">Schedule Appointment 🗓️</Button>
@@ -313,8 +313,8 @@ const LandingPage = () => {
               >
                 {/* Map and info */}
                 <h4 className="mb-3">Our Location</h4>
-                <p className="text-center text-light">123 Pediatric Way, Suite 100, Frisco, TX 75034</p>
-                <iframe title="clinic-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106659.88289462725!2d-96.86173007138332!3d33.10931168172945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c39e08182b88b%3A0xc5424df12a20b005!2sFrisco%2C%20TX!5e0!3m2!1sen!2sin!4v1701389270140!5m2!1sen!2sin" width="100%" height="300" style={{ border: 0, borderRadius: '8px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" ></iframe>
+                <p className="text-center text-light">123 Pediatric Way</p>
+                <iframe title="clinic-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50665692.62573365!2d175.136724!3d39.188621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87403bd8158d164b%3A0xc80aee73a8ff6ec4!2sAspen%20Valley%20Pediatrics!5e0!3m2!1sen!2sin!4v1758619536113!5m2!1sen!2sin" width="100%" height="300" style={{ border: 0, borderRadius: '8px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" ></iframe>
               </motion.div>
             </Col>
             <Col md={6}>
@@ -336,7 +336,7 @@ const LandingPage = () => {
 
       <footer className="footer text-center">
         <Container>
-          <p className="mb-0">© 2025 Pediatrics Frisco. All rights reserved.</p>
+          <p className="mb-0">© 2025 Pediatrics. All rights reserved.</p>
         </Container>
       </footer>
     </div>

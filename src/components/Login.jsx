@@ -73,7 +73,7 @@ const showToast = (message, type = "success") => {
       {/* Login Card */}
       <div className="card shadow-lg p-4" style={{ minWidth: "350px", backgroundColor: "rgba(255,255,255,0.9)" }}>
         <div className="text-center mb-4">
-          <h1 className="text-primary">Pediatric Associates of Frisco</h1>
+          <h1 className="text-primary">Pediatric Associates</h1>
           <p className="text-muted">Compassionate Care for Your Little Ones</p>
         </div>
 
@@ -114,7 +114,7 @@ const showToast = (message, type = "success") => {
           </button>
         </form>
 
-        <p className="text-center text-muted mt-4 mb-0">© 2025 Pediatric Associates of Frisco</p>
+        <p className="text-center text-muted mt-4 mb-0">© 2025 Pediatric Associates</p>
       </div>
 
       {/* Bootstrap Toast */}

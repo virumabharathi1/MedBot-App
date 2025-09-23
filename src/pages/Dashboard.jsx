@@ -48,7 +48,7 @@ const Dashboard = () => {
               <Heart className="text-white" size={24} />
             </div>
             <div>
-              <h4 className="mb-0 text-primary">Pediatric Associates of Frisco</h4>
+              <h4 className="mb-0 text-primary">Pediatric Associates</h4>
               <small className="text-muted">Dashboard</small>
             </div>
           </div>
